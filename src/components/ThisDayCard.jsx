@@ -1,7 +1,7 @@
 function ThisDayCard () {
 
     return (
-         <article className="card w-9/12 h-4/5 flex flex-col items-center justify-evenly rounded-xl">
+         <article className="card w-8/12 h-4/5 flex flex-col items-center justify-evenly rounded-xl">
             <div>
                 <p className="text-base">Rosario, Argentina</p>
             </div>
