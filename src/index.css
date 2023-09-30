@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-app{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top left, rgb(26,119,242, 0.5), #1A77F2);
+}

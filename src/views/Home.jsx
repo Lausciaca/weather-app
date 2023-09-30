@@ -1,7 +1,8 @@
 function Home () {
 
     return (
-        <main>
+        <main className="main-app">
+            
         </main>
     )
 }
