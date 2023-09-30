@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('src/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url('src/assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,11 +25,19 @@
 }
 
 
+
 .main-app{
     height: 100vh;
     width: 100%;
+    font-family: 'Poppins';
     background: linear-gradient(to top left, rgb(26,119,242, 0.5), #1A77F2);
 }
 section{
     background-color: #24353E;
+    color: white;
+}
+
+
+.day-text span{
+    font-family: 'Poppins-Bold';
 }

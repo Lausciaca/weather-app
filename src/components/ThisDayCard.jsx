@@ -1,18 +1,18 @@
 function ThisDayCard () {
 
     return (
-         <section className="w-1/4 h-4/5">
+         <section className="w-1/5 h-4/5 flex flex-col items-center justify-evenly">
             <div>
-                <p>Rosario, Argentina</p>
+                <p className="text-base">Rosario, Argentina</p>
             </div>
             <div>
-                <h2>Martes, 31°C</h2>
+                <h2 className="day-text text-5xl"><span>Martes</span>, 31°C</h2>
             </div>
             <div>
-                <img src="" alt="Clima del dia" />
+                <img src="src/assets/svg/soleado.svg" alt="Clima del dia" className="w-72" />
             </div>
             <div>
-                <h2>Soleado</h2>
+                <h2 className="day-text text-2xl"><strong>Soleado</strong></h2>
             </div>
             <div>
                 <h3>Lluvia 10%</h3>
