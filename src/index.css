@@ -36,7 +36,12 @@
     background-color: #24353E;
     color: white;
 }
-
+.article-stats{
+    width: 30%;
+    height: 45%;
+    background-color: #46555E;
+    color: white;
+}
 
 .day-text span{
     font-family: 'Poppins-Bold';
