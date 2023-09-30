@@ -32,7 +32,7 @@
     font-family: 'Poppins';
     background: linear-gradient(to top left, rgb(26,119,242, 0.5), #1A77F2);
 }
-article{
+.card{
     background-color: #24353E;
     color: white;
 }
