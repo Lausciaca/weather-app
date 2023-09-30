@@ -1,7 +1,7 @@
 function ThisDayCard () {
 
     return (
-         <section className="w-1/5 h-4/5 flex flex-col items-center justify-evenly">
+         <article className="w-9/12 h-4/5 flex flex-col items-center justify-evenly">
             <div>
                 <p className="text-base">Rosario, Argentina</p>
             </div>
@@ -17,7 +17,7 @@ function ThisDayCard () {
             <div>
                 <h3>Lluvia 10%</h3>
             </div>
-         </section>
+         </article>
     )
 }
 export default ThisDayCard
