@@ -10,9 +10,9 @@ function Home () {
             </section>
             <section className="w-2/3 h-full flex flex-col pr-5">
                 <section className="w-full h-2/5 flex justify-around">
-                    <NextDayCard day={'Miercoles'} weather={'soleado'}/>
-                    <NextDayCard day={'Jueves'} />
-                    <NextDayCard day={'Viernes'} />
+                    <NextDayCard next={1}/>
+                    <NextDayCard next={2}/>
+                    <NextDayCard next={3}/>
                 </section>
                 <section className="w-full h-3/5">
                     <ThisDayStats />
