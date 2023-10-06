@@ -15,7 +15,7 @@ function NextDayCard ({ next }) {
     const tomorrowx3 = new Date(currentDate);
     tomorrowx3.setDate(currentDate.getDate() + 3);
 
-    const daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const currentDayOfWeek = daysOfWeek[currentDate.getDay()];
     const tomorrowx1DayOfWeek = daysOfWeek[tomorrowx1.getDay()];
     const tomorrowx2DayOfWeek = daysOfWeek[tomorrowx2.getDay()];

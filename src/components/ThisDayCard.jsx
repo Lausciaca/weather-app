@@ -4,7 +4,7 @@ import { useState } from "react"
 function ThisDayCard () {
     const [data, setData] = useState(null)
 
-    const daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const currentDate = new Date();
     const currentDayOfWeek = daysOfWeek[currentDate.getDay()];
     
