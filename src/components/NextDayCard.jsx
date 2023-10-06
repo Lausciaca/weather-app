@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
+import WeatherIcon from "../utils/WeatherIcon"
 
 function NextDayCard ({ next }) {
 
@@ -49,7 +50,7 @@ function NextDayCard ({ next }) {
             {data &&(
                 <>
                 <div className="absolute top-0 right-0">
-                    <img src={`http:${data.current.condition.icon}`} alt="Clima del día" className="h-48" />
+                    <WeatherIcon weatherCondition={data.current.condition.text} size={'short'}/>
                 </div>
                 <div className="card h-5/6 w-11/12 text-center flex flex-col justify-end p-3 rounded-xl gap-7">
                     <div>   

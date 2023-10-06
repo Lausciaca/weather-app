@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
+import WeatherIcon from "../utils/WeatherIcon";
 
 function ThisDayCard () {
     const [data, setData] = useState(null)
@@ -40,8 +41,8 @@ function ThisDayCard () {
                     <h2 className="day-text text-5xl"><span>{currentDayOfWeek}</span>, {data.current.temp_c}°C</h2>
                 </div>
 
-                <div>
-                    <img src={`http:${data.current.condition.icon}`} alt="Clima del día" className="w-72" />
+                <div className="">
+                    <WeatherIcon weatherCondition={data.current.condition.text} size={'big'} />
                 </div>
 
                 <div>
