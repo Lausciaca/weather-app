@@ -4,11 +4,11 @@ import { useState } from "react"
 function ThisDayCard () {
     const [data, setData] = useState(null)
 
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
     const currentDate = new Date();
     const currentDayOfWeek = daysOfWeek[currentDate.getDay()];
     
-    const apiUrl = "http://api.weatherapi.com/v1/current.json?key=f6df8e4a1f9b409a80d140642230410&q=auto:ip&aqi=yes";
+    const apiUrl = "http://api.weatherapi.com/v1/current.json?key=f6df8e4a1f9b409a80d140642230410&q=auto:ip&aqi=yes&lang=es";
 
     useEffect(() => {
         fetch(apiUrl)
@@ -28,7 +28,7 @@ function ThisDayCard () {
 
 
     return (
-         <article className="card w-8/12 h-4/5 flex flex-col items-center justify-evenly rounded-xl">
+         <article className="card w-9/12 h-4/5 flex flex-col items-center justify-evenly rounded-xl">
             {data && (
                 <>
                 
@@ -49,7 +49,7 @@ function ThisDayCard () {
                 </div>
                 
                 <div>
-                    <h3>Rain {data.current.precip_mm}%</h3>
+                    <h3>Lluvia {data.current.precip_mm}%</h3>
                 </div>
                 </>
             )}

@@ -4,7 +4,7 @@ import ThisDayStats from "../components/ThisDayStats"
 function Home () {
 
     return (
-        <main className="main-app flex p-5">
+        <main className="main-app flex p-5 px-48">
             <section className="w-1/3 h-full flex justify-center items-center">
                 <ThisDayCard />
             </section>

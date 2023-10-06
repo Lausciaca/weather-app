@@ -30,13 +30,13 @@ function ThisDayStats() {
                     <h3 className="day-text m-auto pt-4 text-2xl"><span>Estadisticas del dia</span></h3>
                     <div className="w-11/12 h-5/6 flex flex-wrap justify-around m-auto">
                         <article className="article-stats">
-                            <h2 className="h-1/4 text-2xl p-2">UV Index</h2>
+                            <h2 className="h-1/4 text-2xl p-2">Indice UV</h2>
                             <div className="h-3/4">
                                 <ProgressSemicircle color={'orange'} indice={data.current.uv} indiceTexto={data.current.uv} limite={18}/>
                             </div>
                         </article>
                         <article className="article-stats">
-                            <h2 className="h-1/4 text-2xl p-2">Wind</h2>
+                            <h2 className="h-1/4 text-2xl p-2">Viento</h2>
                             <div className="h-3/4 flex flex-col justify-evenly">
                                 <p className="text-center text-5xl font-bold">
                                     {data.current.wind_dir}
@@ -46,25 +46,25 @@ function ThisDayStats() {
                             </div>
                         </article>
                         <article className="article-stats">
-                            <h2 className="h-1/4 text-2xl p-2">Sunrise</h2>
+                            <h2 className="h-1/4 text-2xl p-2">AM</h2>
                             <div className="h-3/4">
-                                <ProgressSemicircle color={'orange'} indice={'10'} indiceTexto={data.forecast.forecastday[0].astro.sunrise} limite={16}/>
+                                <ProgressSemicircle color={'yellow'} indice={'10'} indiceTexto={data.forecast.forecastday[0].astro.sunrise} limite={16}/>
                             </div>
                         </article>
                         <article className="article-stats">
-                            <h2 className="h-1/4 text-2xl p-2">Humidity</h2>
+                            <h2 className="h-1/4 text-2xl p-2">Humedad</h2>
                             <div className="h-3/4 flex justify-center items-center">
                                 <p className="text-center text-5xl font-bold">{data.current.humidity}%</p>
                             </div>
                         </article>
                         <article className="article-stats">
-                            <h2 className="h-1/4 text-2xl p-2">Thermal sensation</h2>
+                            <h2 className="h-1/4 text-2xl p-2">Sensación termica</h2>
                             <div className="h-3/4 flex justify-center items-center">
                                 <p className="text-center text-5xl font-bold">{data.current.feelslike_c}°C</p>
                             </div>
                         </article>
                         <article className="article-stats">
-                            <h2 className="h-1/4 text-2xl p-2">Sunset</h2>
+                            <h2 className="h-1/4 text-2xl p-2">PM</h2>
                             <div className="h-3/4">
                                 <ProgressSemicircle color={'black'} indice={'10'} indiceTexto={data.forecast.forecastday[0].astro.sunset} limite={16}/>
                             </div>
