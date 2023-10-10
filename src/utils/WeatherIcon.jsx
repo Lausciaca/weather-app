@@ -12,19 +12,19 @@ const WeatherIcon = ({ weatherCondition, size }) => {
 
     // lluvia
     case "Lluvia  moderada a intervalos":
-        iconUrl = "url de la imagen para nublado";
+        iconUrl = "";
         break;
     case "Ligeras lluvias":
-        iconUrl = "url de la imagen para lluvia";
+        iconUrl = "";
         break;
     case "Periodos de lluvia moderada":
-        iconUrl = "url de la imagen para lluvia";
+        iconUrl = "";
         break;
     case "Lluvia moderada":
-        iconUrl = "url de la imagen para lluvia";
+        iconUrl = "";
         break;
     case "Periodos de fuertes lluvias":
-        iconUrl = "url de la imagen para lluvia";
+        iconUrl = "";
         break;
     case "Fuertes lluvias":
         iconUrl = "";
@@ -124,7 +124,7 @@ const WeatherIcon = ({ weatherCondition, size }) => {
     case "Llovizna a intervalos":
         iconUrl = "url de la imagen para nublado";
         break;
-        case "Llovizna":
+    case "Llovizna":
         iconUrl = "url de la imagen para nublado";
         break;
     case "Llovizna helada":

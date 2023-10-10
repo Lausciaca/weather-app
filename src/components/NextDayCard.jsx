@@ -24,8 +24,6 @@ function NextDayCard ({ next }) {
 
 
 
-
-
     const apiUrl = "https://api.weatherapi.com/v1/forecast.json?key=f6df8e4a1f9b409a80d140642230410&q=auto:ip&days=4&aqi=yes&alerts=no&lang=es";
 
     useEffect(() => {
@@ -44,15 +42,12 @@ function NextDayCard ({ next }) {
             });
     }, []);
 
-    const iconoClima = <WeatherIcon weatherCondition={data.current.condition.text} size={'short'}/>
-
-
     return (
         <article className=" w-1/4 h-full flex flex-col items-start justify-evenly relative">
             {data &&(
                 <>
                 <div className="absolute top-0 right-0">
-                    {iconoClima}
+                    <WeatherIcon weatherCondition={data.current.condition.text} size={'short'}/>
                 </div>
                 <div className="card h-5/6 w-11/12 text-center flex flex-col justify-end p-3 rounded-xl gap-7">
                     <div>   
