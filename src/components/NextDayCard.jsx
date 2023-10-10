@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
-import WeatherIcon from "../utils/WeatherIcon"
+import WeatherIcon from "/src/utils/WeatherIcon"
 
 function NextDayCard ({ next }) {
 

@@ -7,7 +7,7 @@ const WeatherIcon = ({ weatherCondition, size }) => {
   switch (weatherCondition) {
     // soleado
     case "Soleado":
-        iconUrl = "/public/svg/soleado.svg";
+        iconUrl = "/svg/soleado.svg";
         break;
 
     // lluvia
