@@ -5,13 +5,13 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('src/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    src: url('/public/fonts/poppins/Poppins-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: 'Poppins-bold';
-    src: url('src/assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    src: url('/public/fonts/poppins/Poppins-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
