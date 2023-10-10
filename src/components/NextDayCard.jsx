@@ -47,7 +47,7 @@ function NextDayCard ({ next }) {
             {data &&(
                 <>
                 <div className="absolute top-0 right-0">
-                    <WeatherIcon weatherCondition={data.current.condition.text} size={'short'}/>
+                    <WeatherIcon weatherCondition={data.forecast.forecastday[next].day.condition.text} size={'short'}/>
                 </div>
                 <div className="card h-5/6 w-11/12 text-center flex flex-col justify-end p-3 rounded-xl gap-7">
                     <div>   
