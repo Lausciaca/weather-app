@@ -9,7 +9,7 @@ function ThisDayCard () {
     const currentDate = new Date();
     const currentDayOfWeek = daysOfWeek[currentDate.getDay()];
     
-    const apiUrl = "http://api.weatherapi.com/v1/current.json?key=f6df8e4a1f9b409a80d140642230410&q=auto:ip&aqi=yes&lang=es";
+    const apiUrl = "https://api.weatherapi.com/v1/current.json?key=f6df8e4a1f9b409a80d140642230410&q=auto:ip&aqi=yes&lang=es";
 
     useEffect(() => {
         fetch(apiUrl)

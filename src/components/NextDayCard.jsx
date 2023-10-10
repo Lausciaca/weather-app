@@ -25,7 +25,7 @@ function NextDayCard ({ next }) {
 
 
 
-    const apiUrl = "http://api.weatherapi.com/v1/forecast.json?key=f6df8e4a1f9b409a80d140642230410&q=auto:ip&days=4&aqi=yes&alerts=no&lang=es";
+    const apiUrl = "https://api.weatherapi.com/v1/forecast.json?key=f6df8e4a1f9b409a80d140642230410&q=auto:ip&days=4&aqi=yes&alerts=no&lang=es";
 
     useEffect(() => {
         fetch(apiUrl)
